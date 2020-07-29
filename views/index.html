@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- jQuery link -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <title>Corona Virus live Update and Prevention</title>
+</head>
+<body onload="fetch()">
+    <section class="header">
+        <nav class="navbar navbar-expand-sm navbar-dark">
+            <a class="navbar-brand" href="#"><img src="image/harilogo1.gif" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>         
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#symptoms">Symptoms</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#prevention">Prevention</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a href="" class="nav-link btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Covid-19</a>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#coranaCountry">Cororna Cases by Country</a>
+                        <a class="dropdown-item" href="/worldCases">Totle World Casea</a>
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+    </section>
+    <!-- Corona update start -->
+    <section class="corona_update" id="home">
+        <div class="row">
+            <div class="col-lg-5 col-md-5 col-12 order-lg-1 order-2">
+                <div class="leftside w-150 h-150 d-flex justify-content-center align-items-center">
+                    <img src="image/corona2.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-7 col-12 order-lg-2 order-1">
+                <div class="right-side w-100 h-100 d-flex justify-content-center align-items-center">
+                    <h1>Let's Stay Safe & Fight Together Against Cor <span class="corona_rotate"><img src="image/corona3.png" alt="" width="100px" height="100px"></span> na Virus </h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid" id="coranaCountry">
+            <div class="update-header-content ">
+                <h2>Covid-19 live updates of the world</h2>
+            </div>
+              <div class="table-responsive my-5">
+                <table class="table table-hover table-script text-center" id="tbval">
+                      <tr style="background-color: lightcoral;">
+                        <th scope="col" style="color:#7a4a91;">Country</th>
+                        <th scope="col" style="color: yellow;">TotalConfirmed</th>
+                        <th scope="col" style="color: green;">TotalRecovered</th>
+                        <th scope="col" style="color: red;">TotalDeaths</th>
+                        <th scope="col" style="color: yellow;">NewConfirmed</th>
+                        <th scope="col" style="color: green;">NewRecovered</th>
+                        <th scope="col" style="color: red;">NewDeaths</th>
+                      </tr>
+                  </table>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Corona update end -->
+    <!-- about section start -->
+    <section class="about" id="about" >
+      <div class="about-header">
+        <h2>ABOUT COVID-19</h2>
+      </div>
+      <div class="about-content container-fluid">
+        <div class="row">
+          <div class="col-lg-5 col-md-6 col-12">
+            <div class="about-img">
+              <img src="image/corona1.jpg" alt="" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-lg-7 col-md-6 col-12">
+            <div class="about-info">
+              <h3>What is COVID-19 (Corona-Virus)</h3>
+              <p>COVID-19 is the infection disease caused by the most recently discovered coronavirus.This new virus and desease were unknown before the outbreak begain in Wuhan,China,in 2019. </p>
+              <p>Coronaviruses are a large family of viruses which may cause illness inanimals or humans.In humans, several coronavirus are known to cause respiratory infections ranging from the common cold to more severe acute respiratory syndrome(SARS).The most recently discovered coronavirus causes coronavirus disease COVID-19. </p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <!-- About section end  -->
+    <!-- Corona virus symptoms start -->
+    <section class="symptoms" id="symptoms">
+      <div class="symptoms-header">
+        <h2>Coronavirus Symptoms</h2>
+      </div>
+      <div class="conatiner">
+        <div class="row text-center">
+          <div class="col-lg-4 col-md-4 col-12">
+            <figure class="text-center">
+              <img src="image/cough.png" alt="" class="img-fluid" width="200px" height="200px">
+              <figcaption>Cough</figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12">
+            <figure class="text-center mt-4">
+              <img src="image/runny nose.jpg" alt="" class="img-fluid" width="200px" height="200px">
+              <figcaption>Runny Nose</figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12">
+            <figure class="text-center mt-4">
+              <img src="image/fever.jpg" alt="" class="img-fluid" width="200px" height="200px">
+              <figcaption>Fever</figcaption>
+            </figure>
+          </div>
+          
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-12">
+            <figure class="text-center mt-4">
+              <img src="image/cold.jpg" alt="" class="img-fluid" width="200px" height="200px">
+              <figcaption>Cold</figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12">
+            <figure class="text-center mt-4">
+              <img src="image/tired.jpg" alt="" class="img-fluid" width="200px" height="200px">
+              <figcaption>tiredness</figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12">
+            <figure class="text-center mt-4">
+              <img src="image/breathing.jpg" alt="" class="img-fluid" width="200px" height="200px">
+              <figcaption>Difficulty breathing(several cases)</figcaption>
+            </figure>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <!-- Corona virus symptoms end -->
+    <!-- prevention section start -->
+    <section class="prevention" id="prevention">
+      <div class="prevention-header">
+        <h2>6 Steps Prevention Against Coronavirus</h2>
+      </div>
+      <div class="container pb-5">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-12">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-12">
+                <figure class="text-center mt-4">
+                <img src="image/handwash.jpg" alt="" class="img-fluid">
+              </figure>
+              </div>
+              <div class="col-lg-8 col-md-8 col-12">
+                <p>Wash your hands reguraly for 20 seconds,with shop and water or alcohal-based  hand rub</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-12 ">
+                <figure class="text-center mt-4">
+                <img src="image/cold.jpg" alt="" class="img-fluid">
+              </figure>
+              </div>
+              <div class="col-lg-8 col-md-8 col-12">
+                <p>Cover your nose and mouth with a disposable tissue or fixed elbow when you cough or sneeze</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-12">
+                <figure class="text-center mt-4">
+                <img src="image/1MD.png" alt="" class="img-fluid">
+              </figure>
+              </div>
+              <div class="col-lg-8 col-md-8 col-12">
+                <p>Avoid close contact (1meter or 3 feet) with people who are unwell</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-12">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-12">
+                <figure class="text-center mt-4">
+                <img src="image/handwash.jpg" alt="" class="img-fluid">
+              </figure>
+              </div>
+              <div class="col-lg-8 col-md-8 col-12">
+                <p>Stay home and self isolate from other in the household if you feel unwell</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-12">
+                <figure class="text-center mt-4">
+                <img src="image/news.jpg" alt="" class="img-fluid">
+              </figure>
+              </div>
+              <div class="col-lg-8 col-md-8 col-12">
+                <p>Saty informed by watching news & follow the recomended practices</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-12">
+                <figure class="text-center mt-4">
+                <img src="image/breathing.jpg" alt="" class="img-fluid">
+              </figure>
+              </div>
+              <div class="col-lg-8 col-md-8 col-12">
+                <p>If you have fever and difficulty breathing,seek medical care early</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </section>
+    <!-- prevention section end -->
+    <!-- Contact us start -->
+    <section class="contact py-5" id="contact">
+      <div class="contact-header">
+        <h2>Contact ASAP</h2>
+      </div>
+      <form action="/" method="POST" class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-8 col-12 offset-lg-2 offset-md-2 offset-0 ">
+            <div class="form-group">
+              <label for="username">Username:</label>
+              <input type="text" name="username" class="form-control" id="username" placeholder="name">
+              <span class="text-danger font-weight-bold" id="name"></span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 col-md-8 col-12 offset-lg-2 offset-md-2 offset-0">
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" name="email" class="form-control" id="email" placeholder="name@gmail.com">
+              <span class="text-danger font-weight-bold" id="emailId"></span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 col-md-8 col-12 offset-lg-2 offset-md-2 offset-0">
+            <div class="form-group">
+              <label for="number">Mobile:</label>
+              <input type="number" name="number" class="form-control" id="number" placeholder="mobile">
+              <span class="text-danger font-weight-bold" id="phone"></span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 col-md-8 col-12 offset-lg-2 offset-md-2 offset-0">
+            <div class="form-group">
+              <label for="Select">Select Symptoms:</label><br>
+              <div class="custom-control custom-checkbox custom-control-inline text-capitalize">
+                <input type="checkbox" name="checkbox" class="custom-control-input" id="checkbox" value="cold">
+                <label for="checkbox" class="custom-control-label">cold</label>
+              </div>
+              <div class="custom-control custom-checkbox custom-control-inline text-capitalize">
+                <input type="checkbox" name="checkbox1" class="custom-control-input" id="checkbox1" value="fever">
+                <label for="checkbox1" class="custom-control-label">Fever</label>
+              </div>
+              <div class="custom-control custom-checkbox custom-control-inline text-capitalize">
+                <input type="checkbox" name="checkbox2" class="custom-control-input" id="checkbox2" value="breath">
+                <label for="checkbox2" class="custom-control-label">Difficulty in Breath</label>
+              </div>
+              <div class="custom-control custom-checkbox custom-control-inline text-capitalize">
+                <input type="checkbox" name="checkbox3" class="custom-control-input" id="checkbox3" value="weak">
+                <label for="checkbox3" class="custom-control-label">Feeling weak</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 col-md-8 col-12 offset-lg-2 offset-md-2 offset-0">
+            <div class="form-group">
+              <label for="message">Describe how are you Feeling:</label>
+              <textarea name="message" id="message" rows="3" class="form-control"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="submit text-center">
+          <button  class="btn text-center" type="submit" onclick="return validation()">Submit</button>
+        </div>
+      </form>
+    </section>
+    <!-- Contact us end -->
+    <!-- Footer section start -->
+    <div class="container scrolltop float-right">
+      <i class="fa fa-arrow-up" onclick="topFunction()" id="myBtn"></i>
+    </div>
+    <footer>
+      <div class="footer-style text-white text-center container-fluid">
+        <p>Copyright &copy; by TechnicalHari </p>
+
+      </div>
+
+    </footer>
+
+
+    <!-- Footer section end -->
+        <!-- counter start -->
+        <script src="jquery.counterup.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+        <!-- <script>
+            $(document).ready(function ($) {
+                $('.count').counterUp({
+                    delay: 10,
+                    time: 3000
+                });
+            });
+            mybutton=document.getElementById("myBtn");
+            window.onscroll=function(){scrollFunction()};
+            function scrollFunction(){
+              if (document.body.scrollTop>100 || document.documentElement.scrollTop>100) {
+                mybutton.style.display="block";
+              }
+              else{
+                mybutton.style.display="none";
+              }
+            }
+            //  When the user click n the button, scroll to the top of the document
+            function topFunction(){
+              document.body.scrollTop=0; //for safari
+              document.documentElement.scrollTop=0;
+            }
+            </script> -->
+   <script src="main.js"></script>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="bootstrap.js"></script>
+</body>
+</html>

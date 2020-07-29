@@ -1,0 +1,195 @@
+*{
+    margin: 0px; padding: 0px;box-sizing: border-box; 
+    font-family: 'Noto Sans JP', sans-serif;
+}
+/* header start */
+.navbar{
+    background:rgb(107, 10, 10);   
+}
+.dropdown-menu{
+    background:rgb(107, 10, 10); 
+}
+.dropdown-menu a{
+    color: #00E8E8;
+}
+.dropdown-menu a:hover{
+    background:rgb(107, 10, 10); 
+    color: yellow;
+}
+.nav-link{
+    color: #00E8E8 !important;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin: 0px 20px;
+}
+.nav-link:hover{
+    color:rgb(2, 2, 56);
+}
+.navbar-brand{
+    color: rgb(248, 6, 139);
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+}
+/* Corona update start */
+.right-side{
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+
+}
+.corona_rotate img{
+    animation: gocorona 3s linear infinite;
+}
+@keyframes gocorona{
+    0%{transform: rotate(0);}
+    100%{transform: rotate(360deg);}
+}
+.leftside img{
+    animation: heartbeat 3s linear infinite;
+}
+@keyframes heartbeat{
+    0%{transform: scale(0.75);}
+    20%{transform: scale(1);}
+    40%{transform: scale(0.75);}
+    60%{transform:scale(1)}
+    80%{transform: scale(0.75);}
+    100%{transform: scale(0.75);}
+}
+.update-header-content h2{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+.refresh button{
+    padding: 10px 30px;
+    padding: 10px 60px;
+    background-color: red;
+    border-radius: 100px;
+    color: #dfb603;
+}
+@media(max-width:768px){
+    .right-side{
+        margin-top: 50px;
+        text-align: center;
+    }
+
+}
+/* Corona update end */
+/* About section start */
+.about-header h2{
+    text-align: center;
+    padding: 50px 0px 50px 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+.about{
+    width: 100%;
+    height: auto;
+    background: #bdb6b68e;
+    padding-bottom: 100px;
+}
+.about-img img{
+    width: 500px;
+    height: 200px;
+}
+.about-info h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+.about-info p{
+    padding-right: 40px;
+}
+@media(max-width:768px){
+    .about-info h3{
+        margin: 30px 0px;
+        text-align: center;
+    }
+}
+/* About section end */
+
+/* Corona virus symptoms start */
+.symptoms{
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+}
+.symptoms-header h2{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    padding: 50px 0;
+}
+figcaption{
+    color: black;
+}
+/* Corona virus symptoms end */
+
+/* Prevention section start */
+.prevention{
+    background: #bdb6b68e;
+    width: 100%;
+    height: auto;
+}
+.prevention-header h2{
+    padding: 100px 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+/* Prevention section end */
+/* Contact us start */
+.contact{
+    width: 100%;
+    height: 107vh;
+    background: #00E8E8;
+    margin-bottom: 0px;
+}
+.contact-header h2{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+label{
+    font-family: 'Roboto', sans-serif;
+    
+}
+.submit button{
+    padding: 12px 35px;
+    background: rgb(3, 3, 61);
+    border-radius: 100px;
+    color: #00E8E8;
+    font-family: 'Roboto', sans-serif;
+}
+@media(max-width:768px){
+    .contact{
+        width: 100%;
+        height: 680px;
+    }
+}
+/* Contact us end */
+/* footer start */
+#myBtn{
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background: #00A8FF;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+#myBtn:hover{
+    background: #606060;
+}
+.footer-style{
+    background: rgb(224, 100, 121);
+}
+.footer-style p{
+    padding: 0px;
+    margin: 0px;
+}
+/* footer end */

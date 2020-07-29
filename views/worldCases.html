@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 API</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        .refresh button {
+            padding: 10px 30px;
+            padding: 10px 60px;
+            background-color: red;
+            border-radius: 100px;
+            color: #dfb603;
+        }
+        .refresh button:hover{
+            color: #00E8E8;
+        }
+    </style>
+</head>
+
+<body onload="fetch()">
+    <div class="container">
+        <h1 class="text-center mt-5">Covid-19 Live Data in Table</h1>
+        <br><br>
+        <table class="table table-hover table-script text-center" id="tbval">
+            <tr style="background:red;color:yellow">
+                <th scope="col">TotalConfirmed</th>
+                <th scope="col">TotalRecovered</th>
+                <th scope="col">TotalDeaths</th>
+            </tr>
+            <tr id="data" style="background-color: black;">
+
+            </tr>
+        </table>
+        <div class="refresh text-center">
+        <button onclick="refreshData()" class="btn ">Refresh Data</button>
+    </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        init()
+        function init() {
+            var url = "https://api.covid19api.com/world/total"
+            var data = ""
+            $.get(url, function (data) {
+                console.log(data)
+                data = `
+                    <td style="color:yellow">${data.TotalConfirmed}</td>
+                    <td style="color:green">${data.TotalRecovered}</td>
+                    <td style="color:red">${data.TotalDeaths}</td>
+                    
+                    `
+                $("#data").html(data)
+
+            })
+        }
+        function refreshData() {
+            clearData()
+            init()
+        }
+        function clearData() {
+            $("#data").empty();
+        };
+    </script>
+</body>
+
+</html>
